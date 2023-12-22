@@ -13,34 +13,30 @@ export default function Experience() {
                     <div className='box-exp'>
                         <h4>2018 - 2020</h4>
                         <h3> Bachelors Degree</h3>
-                        <p>In December of 2020 I recieved my ITM Bachelors degree</p>
+                        <p>In December of 2020 I recieved my ITM Bachelors degree where I learned how to solve data problems using Python, SQL and Database Theory. </p>
                     </div>
                     
                     <div className='box-exp'>
                         <h4>2020</h4>
                         <h3> Salesforce Admin Certification</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus repellendus 
-                            architecto corrupti, nesciunt possimus aut animi ipsam sed commodi quam?</p>
+                        <p>The SalesForce Admin cert was my first stepping stone to getting a job learning how to manage and build objects,custom reporting and user management in a CRM.</p>
                     </div>
 
                     <div className='box-exp'>
                         <h4>2021</h4>
                         <h3> Google Project Management Certification</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus repellendus 
-                            architecto corrupti, nesciunt possimus aut animi ipsam sed commodi quam?</p>
+                        <p>Awarded in 2021 this Certification assisted me in getting a more understanding of Project Management fundamentals and exposing me the agile methodology</p>
                     </div>
 
                     <div className='box-exp'>
                         <h4>2023</h4>
                         <h3> W3 Schools Frontend Certification </h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus repellendus 
-                            architecto corrupti, nesciunt possimus aut animi ipsam sed commodi quam?</p>
+                        <p>Learning Frontend basics with W3 schools I was able to succesfully complete HTML CSS and JavaScript exams.As well as complete projects to help cement new concepts.</p>
                     </div>
                     <div className='box-exp'>
                         <h4>2024</h4>
                         <h3> W3 Schools FullStack Certification </h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus repellendus 
-                            architecto corrupti, nesciunt possimus aut animi ipsam sed commodi quam?</p>
+                        <p>Pending...</p>
                     </div>
 
                 </div>

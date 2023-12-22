@@ -1,6 +1,6 @@
 [
     {
-      "title": "Project yo mama",
+      "title": "Project A",
       "imageSrc": "src/assets/images/icon-github.svg",
       "description": "This is a project made to learn the latest languages by building an app.",
       "skills": ["React", "Express", "Node"],
