@@ -6,6 +6,7 @@ import AboutMe from './components/AboutMe';
 import ContactMe from './components/ContactMe';
 import Projects from './components/Projects';
 import Experience from './components/Experience';
+import AboutMe2 from './components/AboutMe2';
 
 
 export default function App() {
@@ -13,12 +14,10 @@ export default function App() {
     <div>
       <Navbar />
       <Hero />
-      <AboutMe />
+      <AboutMe2 />
       <Skills />
       <Experience />
       <Projects />
-      
-      
       <ContactMe />
 
     </div>

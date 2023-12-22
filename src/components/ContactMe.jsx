@@ -1,35 +1,41 @@
-import React from 'react'
+import React, { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
 
 export default function ContactMe() {
+
+    const form = useRef();
+    const [isSubmitted, setIsSubmitted] = useState(false)
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_f8tts9l', 'template_dky9218', form.current, 'RiQqBc8ajo6qR6_NH')
+        .then((result) => {
+          console.log(result.text);
+          setIsSubmitted(true);
+          form.current.reset();
+        }, 
+      (error) => {
+          console.log(error.text);
+      });
+  };
+
+
   return (
-<div className= 'cm-container'>
-
-<section className='contact'>
-    
-        <h2>Contact Me!</h2>
-        
-        <form action="#">
-            <div className='input-box'>
-                <div className='input-field field'>
-                    <input type="text" placeholder='Full Name' id='name' className='item' autoComplete='off'/>
-                </div>
-                <div className='input-field field'>
-                    <input type="text" placeholder='Email' id='email' className='item' autoComplete='off'/>
-                </div>
-                <div className='input-field field'>
-                    <input type="text" placeholder='subject' id='subject' className='item' autoComplete='off'/>
-                </div>
+    <div className='b-contain' id='contact'>
+        <form className='decor' ref={form} onSubmit={sendEmail}>
+            <div className='form-inner'>
+                <h1 className='form-header'>Contact Me</h1>
+                
+                <input type="text" placeholder='Name' name='user_name'required/>
+                
+                <input type="email" placeholder='Email' name='user_email' required/>
+                <textarea placeholder='Message...'  name='message' rows="5"></textarea>
+                {isSubmitted && <p className='submission-message'>Message sent.</p>}
+                <button type='submit' value="Send" href="/" className='form-button'>Submit</button>
             </div>
-
-            <div className='textarea-field field'>
-                <textarea name="" id="message" cols="30" rows="10"
-                placeholder='Your Message' className='item' autoComplete='off'></textarea>
-            </div>
-            <button type='submit'>Send Message</button>
-
         </form>
 
-    </section>
-</div>
+    </div>
   )
 }

@@ -8,8 +8,7 @@ export default function Skills() {
     
     
     return (
-    <div className='skills-container'>
-        
+    <div className='skills-container' id='skill'>
         <h2>Tech Stack</h2>
         <ul className='skills-list'>
             
